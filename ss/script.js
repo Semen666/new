@@ -973,6 +973,16 @@ if((isFinite(a && b))) {
 }
 
 
+function pow(x, n) {
+    if (n == 1) {
+      return x;
+    } else {
+      return x * pow(x, n - 1);
+    }
+  }
+  
+console.log( pow(2, 3) ); // 8
+
 
 
 function readNubmer() {
@@ -2098,7 +2108,7 @@ let salaries = {
 function topSalary(salaries) {
     let name;
     for(const [name, salary] of Object.entries(salaries)) {
-       
+       name;
     }
     return name
 }
